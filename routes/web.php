@@ -19,12 +19,18 @@ Route::get('/', function () {
 
 Route::get('/products', function () {
     $products = config('comics');
-    return view('comp.products', ['products' => $products]);
+    return view('components.products', ['products' => $products]);
 })->name('products');
 
-
+Route::get('/products/{id}', function ($id){
+    $products = config('comics');
+    if(is_numeric($id) && $id >= 0 && $id < count($products)) {
+        $product = $products[$id];
+        return view ('components.product', compact('product'));
+    } abort('404');
+})->name('product');
 
 
 Route::get('/characters', function () {
-    return view('comp.characters');
+    return view('components.characters');
 })->name('characters');
