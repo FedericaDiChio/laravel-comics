@@ -1,8 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
+<section>
+        <p>{{ $product['description'] }} </p>
 
-<h1>ciao</h1>
+    </section>
+
 
 
 @endsection
