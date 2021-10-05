@@ -1,13 +1,33 @@
 header {
-    background-color: rgb(255,255,255);
-    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-        nav {
-            height: 20px;
-            background-color: rgb(2,130,249);
+    #top-nav {
+        height: 20px;
+        background-color: rgb(2,130,249);
+    
+    }
+    #bottom-nav {
+        height: 100px;
+        background-color: rgb(255,255,255);
+        #header-logo {
+            width: 60px;
+        }
+        .row {
+            height: 100px;
+            @include center;
+            ul {
+                @include center("horizontal");
+            }
             
         }
+    }
+    
+    
 }
+
+
+
+  
+  

@@ -6,12 +6,17 @@
 
 body {
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+#jumbotron {
+  background-color: salmon;
+  height: 250px;
 }
 
 li {
@@ -22,16 +27,31 @@ li a {
 }
 
 header {
-  background-color: white;
-  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
-header nav {
+header #top-nav {
   height: 20px;
   background-color: #0282f9;
+}
+header #bottom-nav {
+  height: 100px;
+  background-color: white;
+}
+header #bottom-nav #header-logo {
+  width: 60px;
+}
+header #bottom-nav .row {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #bottom-nav .row ul {
+  display: flex;
+  justify-content: center;
 }
 
 #products {

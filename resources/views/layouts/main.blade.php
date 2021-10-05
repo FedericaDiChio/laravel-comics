@@ -10,6 +10,8 @@
 <body>
     @include('includes.header')
     <main>
+        <section id="jumbotron">
+        </section>
         @yield('content')    
     </main>
     @include('includes.footer')

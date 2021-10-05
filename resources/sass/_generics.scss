@@ -6,13 +6,18 @@
     
     body {
         height: 100vh;
-        padding-top: 100px;
+        padding-top: 120px;
       
     }
 
     .container {
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    #jumbotron {
+        background-color: salmon;
+        height: 250px;
     }
 
     li {
