@@ -5,26 +5,39 @@ header {
     width: 100%;
     #top-nav {
         height: 20px;
-        background-color: rgb(2,130,249);
-    
+        background-color: $blue;
     }
     #bottom-nav {
         height: 100px;
-        background-color: rgb(255,255,255);
+        background-color: $white;
         #header-logo {
             width: 60px;
         }
         .row {
             height: 100px;
-            @include center;
+            @include center('between');
             ul {
-                @include center("horizontal");
-            }
-            
+                text-transform: uppercase;
+                @include center('vertical');
+                a {
+                    color: $grey;
+                    padding: 10px;
+                }
+                .fa-sort-down {
+                    color: $blue;
+                }
+            }  
+            .icon-search {
+                @include center('end');
+                border-bottom: 2px solid $blue;
+                width: 120px;
+                padding-bottom: 3px;
+                i {
+                    margin-left: 5px;
+                }
+            }  
         }
-    }
-    
-    
+    }    
 }
 
 

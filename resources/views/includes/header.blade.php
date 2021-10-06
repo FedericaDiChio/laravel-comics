@@ -14,8 +14,12 @@
                     <li><a href="">Videos</a></li>
                     <li><a href="">Fans</a></li>
                     <li><a href="">News</a></li>
-                    <li><a href="">Shop</a></li>
+                    <li><a href="">Shop</a><i class="fas fa-sort-down"></i></li>
                 </ul>
+                <div class="icon-search">
+                    <div>Search</div>
+                    <i class="fas fa-search"></i>
+                </div>
             </div>
         </div>    
     </nav>

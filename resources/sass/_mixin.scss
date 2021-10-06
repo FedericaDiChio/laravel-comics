@@ -4,12 +4,17 @@
         align-items: center;
     } @else if $type == "horizontal" {
         justify-content: center;
-    } @else if $type == "center"{
-        align-items: center;
-        justify-content: center;
-    } @else {
+    } @else if $type == "end" {
+        justify-content: flex-end;
+    }@else if $type == "between"{
         align-items: center;
         justify-content: space-between;
     }
 }
 
+// @mixin end($type: 'both') {
+//     display: flex;
+//     @if $type == "end" {
+//         justify-content: flex-end;
+//     } @else if $type == ''
+// }

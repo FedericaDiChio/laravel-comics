@@ -50,8 +50,26 @@ header #bottom-nav .row {
   justify-content: space-between;
 }
 header #bottom-nav .row ul {
+  text-transform: uppercase;
   display: flex;
-  justify-content: center;
+  align-items: center;
+}
+header #bottom-nav .row ul a {
+  color: #1c1c1c;
+  padding: 10px;
+}
+header #bottom-nav .row ul .fa-sort-down {
+  color: #0282f9;
+}
+header #bottom-nav .row .icon-search {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px solid #0282f9;
+  width: 120px;
+  padding-bottom: 3px;
+}
+header #bottom-nav .row .icon-search i {
+  margin-left: 5px;
 }
 
 #products {
