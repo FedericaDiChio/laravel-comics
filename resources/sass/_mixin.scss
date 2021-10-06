@@ -1,3 +1,4 @@
+// FLEX 
 @mixin center($type: "both"){
     display: flex;
     @if $type == "vertical" {
@@ -9,8 +10,22 @@
     }@else if $type == "between"{
         align-items: center;
         justify-content: space-between;
+    }@else {
+        align-items: center;
+        justify-content: center;
     }
 }
+
+// FONT UPPERCASE 
+@mixin uppercase($type: 'both') {
+    text-transform: uppercase;
+    @if $type == 'white'{ 
+        color: $white;
+    } @else if $type == 'grey' {
+        color: $grey;
+    }
+}
+
 
 // @mixin end($type: 'both') {
 //     display: flex;

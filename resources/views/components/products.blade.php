@@ -3,7 +3,9 @@
 @section('content')
     <section id="products">
         <div class="container">
-            <h1>Current Series</h1>
+            <div class="blu-square">
+                <h1>Current Series</h1>
+            </div>            
             <div class="container-card">
                 @foreach ($products as $product)
                     <div class="card">
